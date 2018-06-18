@@ -43,6 +43,8 @@
   <link rel="alternate" hreflang="en" href="http://yourawesomeproject.com/en">
   <link type="text/plain" rel="author" href="humans.txt">
   <link rel="stylesheet" href="./css/app.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
 
   <!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 
@@ -59,7 +61,146 @@
     <!-- example -->
 
     <div class="wrapper">
-    
+      <form class="form">
+        <span class="form__title">Код купона на скидку</span>
+        <input class="form__input" type="text" name="sales-number">
+        <input class="form__button" type="submit" name="submit-button" value="активировать">
+      </form>
+      
+      <ul class="table-header visible">
+        <li class="table-header__name">Наименование товара </li>
+        <li class="table-header-subname">
+          <ul class="table-header-sublist">
+            <li class="table-header-sublist__item">Количество</li>
+            <li class="table-header-sublist__item">Цена/₽</li>
+            <li class="table-header-sublist__item">Скидка</li>
+            <li class="table-header-sublist__item">Цена со скидкой</li>
+          </ul>
+        </li>
+        <li class="table-header__delete">Удалить</li>
+      </ul>
+
+      <div class="card">
+        <section class="card-info">
+          <div class="card-info__image"></div>
+          <div class="card-info-discription">
+            <p class="card-info-discription__name no-visible">Наименование</p>
+            <ul class="card-info-discription__list">
+              <li>Женское / Джинсы RXX</li>
+              <li>Имя бренда</li>
+              <li>Размер: XX</li>
+              <li>Артикул: RXXXXXXX-XXX</li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="card-table">
+          <div class="card-table__cell">
+            <p class="no-visible">Количество</p>
+            <p>- 1 +</p>
+          </div>
+          <div class="card-table__cell">
+            <p class="no-visible">Цена/₽</p>
+            <p>00 000</p>
+          </div>
+          <div class="card-table__cell">
+            <p class="no-visible">Скидка</p>
+            <p>00%</p>
+          </div>
+          <div class="card-table__cell visible">
+            <p>0 000</p>
+          </div>
+          <div class="card-table__cell no-visible">
+            <p>Итого/₽</p>
+            <p>0 000</p>
+          </div>
+        </section>
+
+        <section class="card-delete">
+          <p class="no-visible">Удалить</p>
+          <p class="card-delete__button">
+            <i class="material-icons">close</i>
+          </p>
+        </section>
+      </div>
+
+      <div class="card border-none">
+        <section class="card-info">
+          <div class="card-info__image"></div>
+          <div class="card-info-discription">
+            <p class="card-info-discription__name no-visible">Наименование</p>
+            <ul class="card-info-discription__list">
+              <li>Женское / Джинсы RXX</li>
+              <li>Имя бренда</li>
+              <li>Размер: XX</li>
+              <li>Артикул: RXXXXXXX-XXX</li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="card-table">
+          <div class="card-table__cell">
+            <p class="no-visible">Количество</p>
+            <p>- 1 +</p>
+          </div>
+          <div class="card-table__cell">
+            <p class="no-visible">Цена/₽</p>
+            <p>00 000</p>
+          </div>
+          <div class="card-table__cell">
+            <p class="no-visible">Скидка</p>
+            <p>00%</p>
+          </div>
+          <div class="card-table__cell visible">
+            <p>0 000</p>
+          </div>
+          <div class="card-table__cell no-visible">
+            <p>Итого/₽</p>
+            <p>0 000</p>
+          </div>
+        </section>
+
+        <section class="card-delete">
+          <p class="no-visible">Удалить</p>
+          <p class="card-delete__button">
+            <i class="material-icons">close</i>
+          </p>
+        </section>
+      </div>
+
+      <div class="total">
+        <div class="total__line"></div>
+        <p class="total__price">Итого: 0 000 ₽</p>
+      </div>
+
+      <div class="delivery">
+        <p class="delivery__title">Способ доставки</p>
+        <div class="delivery-courier">
+          <div class="delivery-courier__title">
+            <p>Курьерская доставка до двери в любую точку РФ</p>
+            <p class="delivery-courier__description visible">Товар доставляется бесплатно курьером до двери Вашего дома при сумме заказа от 00 000 рублей. В случае заказа на сумму менее 00 000 рублей, доставка будет стоить 000 рублей. Стоимость 000 руб. Бесплатно от суммы 00000 руб.</p>
+          </div>
+          <p>000 ₽</p>
+          <div class="delivery__radio">
+            <input type="radio" id="radio-1-1" name="radio-1-set" class="ui-radio" checked />
+            <label for="radio-1-1"></label>
+          </div>
+        </div>
+
+        <div class="delivery-himself">
+          <div class="delivery-himself__title">
+            <p>Самовывоз из магазина в Санкт-Петербурге</p>
+            <p class="delivery-himself__description visible">Вы можете самостоятельно забрать свой заказ в магазине в Санкт-Петербурге.</p>
+          </div>
+          <p>0 ₽</p>
+
+          <div class="delivery__radio">
+            <input type="radio" id="radio-1-2" name="radio-1-set" class="ui-radio" checked />
+            <label for="radio-1-2"></label>
+          </div>
+
+        </div>
+      </div>
 
     </div>
 
